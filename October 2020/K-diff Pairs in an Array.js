@@ -1,25 +1,27 @@
 /**
  * https://leetcode.com/explore/challenge/card/october-leetcoding-challenge/559/week-1-october-1st-october-7th/3482/
- * It workd but TLE :( 47/59 passed
  * Github: theketan
  */
-var findPairs = function(nums, k) {
-    let obj = {}
-    nums.sort((a,b) => a-b)
-    for(let i = 0; i< nums.length-1; i++){
-        for(let j = i+1; j< nums.length; j++){
-            let key = Math.abs(nums[i] - nums[j])
-            if(key > k) break;
-            // obj[key] = []
-            if(obj[key] == undefined){
-                
-                obj[key] = [nums[i] +" "+ nums[j]];
-            }else{
-                obj[key] =[ ...(new Set([...obj[key], nums[i] +" "+ nums[j]]))];
-            }
-        }
+var findPairs = function (nums, k) {
+  sol = 0;
+  numSet = [...new Set(nums)];
+  console.log(nums);
+  if (k === 0) {
+    for (num of numSet) {
+      console.log(num);
+      if (nums.filter((n) => n === num).length > 1) {
+        sol++;
+      }
     }
-    console.log(obj)
-    return obj[k+""] === undefined?0: obj[k+""].length
-    
+    return sol;
+  }
+  if (k > 0) {
+    for (num of numSet) {
+      if (numSet.includes(num + k)) {
+        sol++;
+      }
+    }
+  }
+
+  return sol;
 };
