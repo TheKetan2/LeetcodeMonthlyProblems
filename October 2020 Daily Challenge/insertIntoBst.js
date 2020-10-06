@@ -18,25 +18,23 @@ github: theketan2
  */
 
 var insertIntoBST = function (root, val) {
-  if (!root) {
-    return new TreeNode(val);
-  } else {
-    let currentNode = root;
-    while (currentNode) {
-      if (currentNode.val < val) {
-        if (currentNode.right === null) {
-          currentNode.right = new TreeNode(val);
-          break;
-        } else {
-          currentNode = currentNode.right;
-        }
+  if (!root) return new TreeNode(val);
+
+  let currNode = root;
+  while (currNode) {
+    if (currNode.val < val) {
+      if (currNode.right === null) {
+        currNode.right = new TreeNode(val);
+        break;
       } else {
-        if (currentNode.left === null) {
-          currentNode.left = new TreeNode(val);
-          break;
-        } else {
-          currentNode = currentNode.left;
-        }
+        currNode = currNode.right;
+      }
+    } else {
+      if (currNode.left === null) {
+        currNode.left = new TreeNode(val);
+        break;
+      } else {
+        currNode = currNode.left;
       }
     }
   }
