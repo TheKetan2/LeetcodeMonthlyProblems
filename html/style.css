@@ -1,0 +1,13 @@
+#btn {
+  height: 48px;
+  width: 96px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* border: none; */
+  /* outline: none; */
+  border-width: 1px;
+  /* background-color: whitesmoke; */
+  font-weight: bold;
+  align-self: center;
+}

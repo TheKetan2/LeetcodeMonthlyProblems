@@ -27,3 +27,7 @@ var isValid = function (s) {
   console.log(stack);
   return stack.length === 0;
 };
+
+function isPositive(a) {
+  throw new Error(a === 0 ? "Zero Error" : a < 0 ? "Negative Error" : "YES");
+}
