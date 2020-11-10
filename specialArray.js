@@ -16,3 +16,11 @@ var specialArray = function (nums) {
   }
   return luckyNum;
 };
+
+let aboutMe = {
+  "I am": "Comics,Sci-Fi Nerd",
+  "Bit of": "Stock Market enthusiast.",
+  Love: ["ReactJS", "ReactNative", "Flutter"],
+  "Fan of": ["DC", "OPM", "Elon Musk", "Naval Ravikant", , "JRE,JBP", "The Hu"],
+  "Definitely Not": "A word-smith :P",
+};
