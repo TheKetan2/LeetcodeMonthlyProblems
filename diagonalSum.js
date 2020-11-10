@@ -6,11 +6,9 @@
  */
 var diagonalSum = function (mat) {
   let sum = 0;
-  for (let i = 0, j = 0; i < mat.length; i++, j++) {
+  for (let i = 0, j = 0, k = mat.length - 1; i < mat.length; i++, j++, k--) {
     sum += mat[i][j];
-  }
-  for (let i = mat.length - 1, j = 0; i >= 0; i--, j++) {
-    sum += mat[i][j];
+    sum += mat[k][j];
   }
   if (mat.length % 2 === 0) return sum;
   let index = Math.floor(mat.length / 2);
