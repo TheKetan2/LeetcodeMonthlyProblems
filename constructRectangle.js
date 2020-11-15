@@ -20,5 +20,5 @@ var constructRectangle = function (area) {
       }
     }
   }
-  return solArr.sort((b, a) => parseInt(a) - parseInt(b));
+  return solArr;
 };
