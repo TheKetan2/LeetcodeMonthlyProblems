@@ -20,34 +20,29 @@ var selfDividingNumbers = function (left, right) {
   return sol;
 };
 
-{
-  pageOfItems: [
-    {
-      __v: 0,
-      _id: "5f10121efb43a43e30a4fbd2",
-      brand: [Object],
-      category: [Object],
-      color: [Array],
-      createdAt: "2020-07-16T08:38:37.787Z",
-      description: "Full Sleeves, Na, Na",
-      discountType: "Percentage",
-      discountValue: 50.07153075822603,
-      fabric: null,
-      gender: [Object],
-      itemcode: "MW4405",
-      name: "Moda Grey Casual Shirts",
-      photo: [Array],
-      price: 699,
-      quantity: 10,
-      rotation: 0,
-      shipping: true,
-      size: [Array],
-      sleeves: "5f0ffa443c7e14330408c285",
-      sold: 0,
-      status: "ON",
-      store: "5f10119dbfe6ec3e38b0a71b",
-      subcategory: "5f04732469c00914e0bb905c",
-      updatedAt: "2020-07-16T08:38:37.787Z",
-    },
-  ],
+/**
+ * @param {string[]} A
+ * @return {string[]}
+ */
+var commonChars = function (A) {
+  let first = A[0].split("").sort();
+  let sol = [];
+  if (A.length === 1) return first;
+  for (let ch of first) {
+    let flag = true;
+    for (let i = 1; i < A.length; i++) {
+      let index = A[i].indexOf(ch);
+      if (index === -1) {
+        flag = false;
+        break;
+      } else {
+        A[i] = A[i].substr(0, index) + A[i].substr(index + 1);
+        console.log(A[i]);
+      }
+    }
+    if (flag) {
+      sol.push(ch);
+    }
+  }
+  return sol;
 };
