@@ -58,3 +58,19 @@ console.log(
     ["1", "1", "2", "2"],
   ])
 );
+
+let aboutMe = {
+  "I am": "Comics,Sci-Fi Nerd",
+  "Bit of": "Stock Market enthusiast.",
+  Love: ["⚛ ReactJS", "📱 React Native", "📱 Flutter 💙"],
+  "Fan of": [
+    "DC",
+    "OPM",
+    "Elon Musk",
+    "Naval Ravikant",
+    "JRE",
+    "JBP",
+    "The Hu",
+  ],
+  "Definitely Not": "A word-smith :P",
+};
