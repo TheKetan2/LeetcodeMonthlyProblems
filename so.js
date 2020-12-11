@@ -72,5 +72,4 @@ let aboutMe = {
     "JBP",
     "The Hu",
   ],
-  "Definitely Not": "A word-smith :P",
 };
