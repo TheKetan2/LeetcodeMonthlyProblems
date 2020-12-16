@@ -5,17 +5,17 @@
  * @param {string[]} words
  * @return {number}
  */
-var countConsistentStrings = function(allowed, words) {
-    let sol=0;
-    for(let word of words){
-        let flag = true;
-        for(let ch of [...word]){
-            if(!allowed.includes(ch)){
-                flag = false;
-                break;
-            }
-        }
-        if(flag) sol++;
+var countConsistentStrings = function (allowed, words) {
+  let sol = 0;
+  for (let word of words) {
+    let flag = true;
+    for (let ch of [...word]) {
+      if (!allowed.includes(ch)) {
+        flag = false;
+        break;
+      }
     }
-    return sol;
+    if (flag) sol++;
+  }
+  return sol;
 };
