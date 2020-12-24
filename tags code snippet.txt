@@ -9,12 +9,7 @@
 
 
 
-<!-- begin snippet: js hide: false console: true babel: false -->
-
-<!-- language: lang-js -->
 
 
-
-<!-- end snippet -->
 
 
