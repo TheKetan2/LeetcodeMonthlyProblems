@@ -1,4 +1,5 @@
 /**
+ * github: theketan2
  * https://leetcode.com/problems/shortest-distance-to-a-character
  * @param {string} S
  * @param {character} C
