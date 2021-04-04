@@ -8,7 +8,7 @@ var checkIfExist = function (arr) {
   for (let i = 0; i < arr.length; i++) {
     let temp = [...arr];
     temp.splice(i, 1);
-    console.log(temp);
+    // console.log(temp);
     if (temp.includes(arr[i] + arr[i])) {
       console.log(arr[i]);
       return true;
