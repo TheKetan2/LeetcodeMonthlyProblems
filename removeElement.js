@@ -1,5 +1,5 @@
 /**
- * https://leetcode.com/problems/remove-element/
+ * https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/3575/
  * github: theketan2
  * @param {number[]} nums
  * @param {number} val
@@ -10,7 +10,7 @@ var removeElement = function (nums, val) {
     if (nums[i] === val) {
       nums.splice(i, 1);
       i--;
-      console.log(nums);
+      // console.log(nums)
     }
   }
 
